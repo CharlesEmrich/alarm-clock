@@ -1,5 +1,5 @@
 #set-alarm-form, #snooze-settings {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   height: 140px;
@@ -23,14 +23,14 @@
 #snooze {
   position: relative;
 
-  &:after {
-    content: '';
-    display: block;
-    @include size(32px);
-    background-image: url('../../img/settings.png');
-    background-size: 32px 32px;
-    position: absolute;
-    right: -40px;
-    top: 12px;
-  }
+}
+.settings {
+  content: '';
+  display: block;
+  @include size(32px);
+  background-image: url('../../img/settings.png');
+  background-size: 32px 32px;
+  position: absolute;
+  right: -20px;
+  top: 12px;
 }
