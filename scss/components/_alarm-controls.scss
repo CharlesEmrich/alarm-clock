@@ -1,0 +1,14 @@
+.alarm-controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  button {
+    border-radius: 5px;
+    background: white;
+    border: none;
+    font-size: 24px;
+    color: black;
+    padding: 15px 30px;
+  }
+}

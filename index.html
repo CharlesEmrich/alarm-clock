@@ -9,6 +9,31 @@
     <script type="text/javascript" src="build/js/app.js"></script>
   </head>
   <body>
-    <!-- GIVE ME SOME HTML, YO! -->
+    <div class="container">
+      <div class="clock">
+        <span class="current-time">8:00</span>
+      </div>
+      <div class="alarm-controls">
+        <button type="button" id="set-alarm">Set Alarm</button>
+        <button type="button" id="snooze">Snooze</button>
+      </div>
+      <div class="form-container">
+        <form id="set-alarm-form">
+          <label for="time">Time:</label>
+          <input type="time" name="time">
+          <button type="submit" for="set-alarm-form">Start Alarm</button>
+        </form>
+        <form id="snooze-settings">
+          <label for="snooze-length">Snooze Length:</label>
+          <input type="number" name="snooze-length" value="5">
+          <button type="submit" for="snooze-settings">Save Snooze Length</button>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $('#snooze:after').click(function() {
+        alert('hello');
+      });
+    </script>
   </body>
 </html>

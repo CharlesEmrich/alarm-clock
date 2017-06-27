@@ -7,3 +7,15 @@
     padding: 0;
   }
 }
+
+html, body {
+  @include size(100%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: white;
+}

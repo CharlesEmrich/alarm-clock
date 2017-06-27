@@ -1,0 +1,36 @@
+#set-alarm-form, #snooze-settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140px;
+
+  input {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  button {
+    border-radius: 5px;
+    background: white;
+    border: none;
+    font-size: 24px;
+    color: black;
+    padding: 10px 20px;
+  }
+}
+
+#snooze {
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    @include size(32px);
+    background-image: url('../../img/settings.png');
+    background-size: 32px 32px;
+    position: absolute;
+    right: -40px;
+    top: 12px;
+  }
+}
